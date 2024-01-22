@@ -10,7 +10,7 @@
 		"noUnusedParameters": true,
 
 		// Modules
-		"module": "ESNext",
+		"module": "NodeNext",
 		"moduleResolution": "NodeNext",
 		"target": "ESNext",
 		"moduleDetection": "auto",
@@ -28,7 +28,15 @@
 		"forceConsistentCasingInFileNames": true,
 		"skipLibCheck": true,
 		"skipDefaultLibCheck": true,
-		"importHelpers": true
+		"importHelpers": true,
+
+		// Paths
+		"baseUrl": ".",
+		"paths": {
+			"@structures/*": ["src/structures/*"],
+			"@misc/*": ["src/misc/*"],
+		},
+
 	},
 	"include": ["src/**/*", "environment.d.ts"],
 	"exclude": ["node_modules"]
